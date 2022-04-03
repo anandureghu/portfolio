@@ -77,36 +77,56 @@ function Landing() {
           initial={{y:-50, opacity:0}}
           animate={{y:0,opacity:1}}
           transition={{duration:1, delay:0.1}}
+          drag={true}
+          // dragConstraints={{left:100, right: 100, top:100, bottom:100}}
           src={images.react} alt="" className="display-icon react" />
+
           <motion.img 
           initial={{y:-50, opacity:0}}
           animate={{y:0,opacity:1}}
           transition={{duration:1, delay:0.2}}
+          drag={true}
+          // dragConstraints={{left:100, right: 100, top:100, bottom:100}}
           src={images.java} alt="" className="display-icon java" />
+
           <motion.img 
           initial={{y:-50, opacity:0}}
           animate={{y:0,opacity:1}}
           transition={{duration:1, delay:0.1}}
+          drag={true}
+          // dragConstraints={{left:100, right: 100, top:100, bottom:100}}
           src={images.js} alt="" className="display-icon js" />
+
           <motion.img 
           initial={{y:-50, opacity:0}}
           animate={{y:0,opacity:1}}
           transition={{duration:1, delay:0.3}}
+          drag={true}
+          // dragConstraints={{left:100, right: 100, top:100, bottom:100}}
           src={images.go} alt="" className="display-icon go" />
+          
           <motion.img 
           initial={{y:-50, opacity:0}}
           animate={{y:0,opacity:1}}
           transition={{duration:1, delay:0.2}}
+          drag={true}
+          // dragConstraints={{left:100, right: 100, top:100, bottom:100}}
           src={images.springboot} alt="" className="display-icon spring-boot" />
+          
           <motion.img 
           initial={{y:-50, opacity:0}}
           animate={{y:0,opacity:1}}
           transition={{duration:1, delay:0.1}}
+          drag={true}
+          // dragConstraints={{left:100, right: 100, top:100, bottom:100}}
           src={images.postgre} alt="" className="display-icon postgre" />
+          
           <motion.img 
           initial={{y:-50, opacity:0}}
           animate={{y:0,opacity:1}}
-          transition={{duration:1, delay:0.5}}
+          transition={{duration:1, delay:0.1}}
+          drag={true}
+          // dragConstraints={{left:100, right: 100, top:100, bottom:100}}
           src={images.git} alt="" className="display-icon git" />
           </div>
         </div>
