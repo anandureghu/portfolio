@@ -1,0 +1,191 @@
+.landing{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+    &_text, &_display{
+        position: absolute;
+        top: 45%;
+        transform: translateY(-50%);
+
+        @media only screen and (min-width: 1200px){
+            top: 40%;
+        }
+
+    }
+
+    &_text{
+        p.name{
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: #315BF4;
+
+            display: flex;
+            gap: 18px;
+            align-items: center;
+
+            span{
+                margin-top: 5px;
+
+                a{
+                    text-decoration: none;
+                    color: #315BF4;
+                }
+            }
+
+            @media only screen and (min-width: 1200px){
+                font-size: 4rem;
+            }
+        }
+
+        p.description{
+            font-size: 1.5rem;
+            font-weight: 100;
+            margin:5px 0px;
+            text-shadow: 2px 2px 4px rgba(0,255,255,1);
+
+            @media only screen and (min-width: 1200px){
+                font-size: 2rem;
+                margin: 10px 0px;
+            }
+        }
+
+        .social_media{
+            color: black;
+            text-decoration: none;
+            margin-right: 10px;
+            font-size: 1.5rem;
+
+            @media only screen and (min-width: 1200px){
+                font-size: 2rem;
+                margin-right: 15px;
+            }
+        }
+
+        a.go-down{
+            display: none;
+        }
+    }
+
+    &_display{
+        top: 35%;
+        right: 25%;
+        transform: translateX(50%);
+        
+        .coding-img{
+            position: relative;
+
+            .display-icon{
+                position: absolute;
+                width: 1.6rem;
+                top: 0;
+                right: 0;
+
+                &.react{
+                    top: 0;
+                    right: 80%;
+                    color: #61DAFB;
+                }
+
+                &.js{
+                    right: 20%;
+                    color: #EFD81D;
+                }
+
+                &.go{
+                    width: 2rem;
+                    top: -10%;
+                    right: 50%;
+                }
+
+                &.java{
+                    top: 35%;
+                    right: 90%;
+                    color: #E06B00;
+                }
+
+                &.spring-boot{
+                    top: 35%;
+                    right: 10%;
+                    color: #7BD354;
+                    width: 3rem;
+                }
+
+                &.postgre{
+                    top: 70%;
+                    right: 90%;
+                    color: #31648C;
+                    width: 3rem;
+                }
+
+                &.git{
+                    top: 70%;
+                    right: 10%;
+                    color: #E84E31;
+                }
+            }
+        }
+    }
+
+    &_text{
+        @media only screen and (max-width: 900px){
+            top: 35%;
+        }
+
+        @media only screen and (max-width: 600px){
+            width: 100%;
+            top: 60%;
+            left: 50%;
+            text-align: center;
+            transform: translate(-50%, 0%) !important;
+            p.name{
+                justify-content: center;
+            }
+
+            p.description{
+                margin: 20px 0px;
+            }
+
+            span{
+                display: none;
+            }
+
+            a.go-down{
+                font-size: 3rem;
+                color: #315BF4;
+                margin-top: 10vh;
+                display: block;
+            }
+        }
+
+    }
+
+    &_display{
+
+        @media only screen and (max-width: 1200px){
+            top: 40%;
+            right: 30%;
+        }
+
+        @media only screen and (max-width: 900px){
+            top: 55%;
+            right: 35%;
+        }
+
+        @media only screen and (max-width: 600px){
+            top: 30%;
+            right: 48%;
+        }
+
+        @media only screen and (max-width: 500px){
+            // top: 3%;
+            right: 50%;
+            transform: translateX(50%) !important;
+            .coding{
+                width: 24rem;
+            }
+        }
+
+    }
+
+}
