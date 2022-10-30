@@ -5,11 +5,15 @@ import Testimonials from "./components/Testimonials/Testimonials";
 import Topbar from "./components/Topbar/Topbar";
 import Works from "./components/Works/Works";
 import "./App.scss";
+import { useState } from "react";
 
 function App() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+
   return (
     <div className="app">
-      <Topbar />
+      <Topbar open={isMenuOpen} toggleMenuOpen={toggleMenu} />
       <div className="sections">
         <Intro />
         <Portfolio />
