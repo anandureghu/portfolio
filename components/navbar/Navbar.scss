@@ -1,0 +1,26 @@
+.nav {
+  @apply flex justify-between px-[18%] py-4 text-xl items-center;
+
+  &__main {
+    @apply flex gap-28 max-md:gap-20 items-center;
+    &-text {
+      @apply font-semibold;
+    }
+  }
+
+  &__items {
+    @apply flex list-none m-0 p-0 gap-12 uppercase text-base max-lg:hidden;
+  }
+
+  &__actions {
+    @apply flex gap-1 text-base max-lg:hidden;
+
+    button {
+      @apply p-3 px-5 rounded-full uppercase;
+
+      &:nth-child(2) {
+        @apply bg-white text-black lowercase font-semibold;
+      }
+    }
+  }
+}
