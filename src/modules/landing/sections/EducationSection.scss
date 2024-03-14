@@ -1,0 +1,57 @@
+@import "../../../styles/master";
+
+.landing {
+  .education {
+    height: $page-height;
+    background-color: $color-grey-900;
+    color: $color-grey-000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+
+    &__content {
+      flex: 1;
+      padding-left: 10%;
+
+      &--title {
+        font-size: 70px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 50px;
+      }
+
+      &--education {
+        margin-bottom: 25px;
+        &-course {
+          font-size: 20px;
+          font-weight: 600;
+          margin-bottom: 10px;
+        }
+
+        &-details {
+          color: $color-grey-300;
+
+          &-institution {
+            padding-right: 10px;
+            border-right: 2px solid $color-grey-600;
+            margin-right: 5px;
+          }
+
+          &-startYear,
+          &-endYear {
+            letter-spacing: 2px;
+            margin: 0 5px;
+          }
+        }
+      }
+    }
+
+    &__img {
+      flex: 1;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
