@@ -11,6 +11,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 30px 0;
+  background-color: $color-grey-900;
 
   &__line {
     content: " ";
@@ -33,7 +34,7 @@
     &-item{
       transition: all 0.2s ease-in;
       cursor: pointer;
-      
+
       &:hover{
         color: $color-grey-000;
         font-weight: 500;

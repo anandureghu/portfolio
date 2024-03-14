@@ -1,5 +1,6 @@
 import Footer from "../Footer/Footer";
 import Navbar from "../Navbar/Navbar";
+import "./AppLayout.scss";
 
 interface IAppLayoutProps {
   children: React.ReactNode;
@@ -7,9 +8,9 @@ interface IAppLayoutProps {
 
 const AppLayout: React.FC<IAppLayoutProps> = ({ children }) => {
   return (
-    <div>
+    <div className="layout">
       <Navbar />
-      <div>{children}</div>
+      <div className="layout__content">{children}</div>
       <Footer />
     </div>
   );
