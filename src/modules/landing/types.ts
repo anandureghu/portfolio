@@ -7,3 +7,12 @@ export interface IEducation {
   mark: number; // Grade/mark achieved
   markType: string; // Type of grade/mark (e.g., percentage, GPA, etc.)
 }
+
+export interface IWork {
+  organization: string; // Name of the organization
+  designation: string; // Designation in the organization
+  startingYear: number; // Year education started
+  endYear: number | null; // Year education ended
+  logo: string; // Logo of the organization
+  link?: string; // Link of organization website
+}

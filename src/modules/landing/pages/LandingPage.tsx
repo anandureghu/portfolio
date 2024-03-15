@@ -1,6 +1,7 @@
 import AboutMeSection from "../sections/AboutMeSection";
 import EducationSection from "../sections/EducationSection";
 import HeaderSection from "../sections/HeaderSection";
+import WorkSection from "../sections/WorkSection";
 
 const LandingPage = () => {
   return (
@@ -8,6 +9,7 @@ const LandingPage = () => {
       <HeaderSection />
       <AboutMeSection />
       <EducationSection />
+      <WorkSection />
     </div>
   );
 };

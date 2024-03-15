@@ -1,4 +1,4 @@
-import { IEducation } from "./types";
+import { IEducation, IWork } from "./types";
 
 export const educationList: IEducation[] = [
   {
@@ -27,5 +27,16 @@ export const educationList: IEducation[] = [
     endYear: 2016,
     mark: 98,
     markType: "%",
+  },
+];
+
+export const workList: IWork[] = [
+  {
+    organization: "QBurst Technologies",
+    designation: "Software Engineer",
+    startingYear: 2021,
+    endYear: null,
+    logo: "https://static-cdn.qburst.com/5-4-6/images/responsive/QBurstlogo.svg",
+    link: "https://qburst.com",
   },
 ];

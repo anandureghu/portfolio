@@ -17,7 +17,7 @@
     width: 100%;
     height: 5px;
     background-color: $color-grey-200;
-    flex: 2;
+    flex: 0.8
   }
 
   &__rounds {
@@ -26,7 +26,7 @@
     display: flex;
     gap: 10px;
     padding-left: 10%;
-    flex: 0.5;
+    flex: 2;
 
     &-round {
       content: " ";
