@@ -1,0 +1,47 @@
+@import "../../../styles/master";
+
+.landing {
+  .aboutme {
+    height: $page-height;
+    background-color: $color-grey-900;
+    color: $color-grey-000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    padding: 0 10%;
+    flex-wrap: wrap;
+
+    &__img {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      min-width: 500px;
+
+      img {
+        width: 500px;
+        height: 500px;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+    }
+
+    &__content {
+      flex: 1;
+
+      &--title {
+        font-size: 70px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 50px;
+      }
+
+      &--details {
+        font-size: 18px;
+        color: $color-grey-300;
+        line-height: 2;
+      }
+    }
+  }
+}

@@ -1,0 +1,61 @@
+@import "../../../styles/master";
+
+.landing {
+  .work {
+    height: $page-height;
+    background-color: $color-grey-900;
+    color: $color-grey-000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+
+    &__content {
+      flex: 1;
+      padding-right: 10%;
+
+      &--title {
+        font-size: 70px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 50px;
+      }
+
+      &--work {
+        margin-bottom: 25px;
+        &-organization {
+          margin-bottom: 10px;
+          a {
+            font-size: 30px;
+            font-weight: 600;
+            color: $color-grey-000;
+          }
+        }
+
+        &-details {
+          color: $color-grey-300;
+
+          &-designation {
+            padding-right: 10px;
+            border-right: 2px solid $color-grey-600;
+            margin-right: 5px;
+          }
+
+          &-startYear,
+          &-endYear,
+          &-present {
+            letter-spacing: 2px;  
+            margin: 0 5px;
+          }
+        }
+      }
+    }
+
+    &__img {
+      flex: 1;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
