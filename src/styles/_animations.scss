@@ -2,3 +2,17 @@
   -webkit-animation: $key-frame-bounce-top 2s infinite both;
   animation: $key-frame-bounce-top 2s infinite both;
 }
+
+.tracking-in-expand-fwd-bottom {
+  -webkit-animation: $key-frame-tracking-in-expand-fwd-bottom 0.8s
+    cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  animation: $key-frame-tracking-in-expand-fwd-bottom 0.8s
+    cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
+
+.tracking-in-contract {
+  -webkit-animation: $key-frame-tracking-in-contract 0.8s
+    cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  animation: $key-frame-tracking-in-contract 0.8s
+    cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
