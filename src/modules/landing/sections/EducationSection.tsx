@@ -7,9 +7,12 @@ const EducationSection = () => {
     <div className="education">
       <div className="education__content">
         <h1 className="education__content--title">EDUCATION</h1>
-        {educationList.map((education: IEducation) => {
+        {educationList.map((education: IEducation, i: number) => {
           return (
-            <div className="education__content--education">
+            <div
+              className="education__content--education"
+              key={`eduation-item-${i + 1}`}
+            >
               <h3 className="education__content--education-course">
                 {education.course} ({education.mark} {education.markType})
               </h3>

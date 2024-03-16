@@ -10,7 +10,6 @@ const LandingPage = () => {
   const myWorksListSectionRef = useRef<HTMLDivElement | null>(null);
 
   const scrollToMyWorks = () => {
-    console.log("first");
     myWorksListSectionRef.current?.scrollIntoView({ behavior: "smooth" });
   };
 

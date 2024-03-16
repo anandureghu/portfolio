@@ -17,9 +17,13 @@ const Navbar = () => {
     <div className="navbar">
       <div className="navbar__line" />
       <ul className="navbar__items">
-        {navItems.map((item) => {
+        {navItems.map((item, i) => {
           return (
-            <li className="navbar__items-item" onClick={item.action}>
+            <li
+              className="navbar__items-item"
+              onClick={item.action}
+              key={`nav-item-${i + 1}`}
+            >
               {item.label}
             </li>
           );

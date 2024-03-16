@@ -10,9 +10,9 @@ const WorkSection = () => {
       </div>
       <div className="work__content">
         <h1 className="work__content--title">WORK EXPERIENCE</h1>
-        {workList.map((work: IWork) => {
+        {workList.map((work: IWork, i: number) => {
           return (
-            <div className="work__content--work">
+            <div className="work__content--work" key={`work-item-${i + 1}`}>
               <h3 className="work__content--work-organization">
                 <a href={work.link} target="_blank">
                   {work.organization}
