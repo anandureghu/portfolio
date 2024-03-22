@@ -1,3 +1,5 @@
+import { PROJECT_TAGS, PROJECT_TYPE } from "./consts";
+
 export interface IEducation {
   institution: string; // Name of the educational institution
   location: string; // Location of the institution
@@ -15,4 +17,17 @@ export interface IWork {
   endYear: number | null; // Year education ended
   logo: string; // Logo of the organization
   link?: string; // Link of organization website
+}
+
+type IProjectTags = (typeof PROJECT_TAGS)[keyof typeof PROJECT_TAGS];
+type IProjectType = (typeof PROJECT_TYPE)[keyof typeof PROJECT_TYPE];
+
+export interface IProject {
+  title: string;
+  description: string;
+  type: IProjectType;
+  tags: IProjectTags[];
+  productionLink: string;
+  sourceCodeLink: string;
+  imageUrl: string;
 }
