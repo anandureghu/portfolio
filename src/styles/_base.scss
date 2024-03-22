@@ -23,3 +23,32 @@ a:visited {
   color: inherit;
   text-decoration: none;
 }
+
+input,
+textarea {
+  background-color: $color-grey-800;
+  color: $color-grey-200;
+  border: none;
+  outline: none;
+  padding: 15px;
+  border-radius: 8px;
+
+  &::placeholder {
+    color: $color-grey-500;
+  }
+}
+
+textarea {
+  min-height: 250px;
+}
+
+button {
+  background-color: $color-grey-000;
+  border: none;
+  outline: none;
+  padding: 15px 20px;
+  color: $color-grey-600;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+}

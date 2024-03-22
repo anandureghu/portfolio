@@ -1,0 +1,33 @@
+@import "../../../styles/master";
+
+.landing {
+  .contact {
+    height: $page-height;
+    background-color: $color-grey-900;
+    color: $color-grey-000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20%;
+
+    &__content {
+      &--title {
+        font-size: 70px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        text-align: left;
+      }
+
+      &--details {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+        width: 80vw;
+      }
+    }
+  }
+}

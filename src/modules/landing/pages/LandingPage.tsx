@@ -5,6 +5,7 @@ import HeaderSection from "../sections/HeaderSection";
 import MyWorksSection from "../sections/MyWorksSection";
 import WorkSection from "../sections/WorkSection";
 import MyWorksListSection from "../sections/MyWorksListSection";
+import ContactSection from "../sections/ContactSection";
 
 const LandingPage = () => {
   const myWorksListSectionRef = useRef<HTMLDivElement | null>(null);
@@ -21,6 +22,7 @@ const LandingPage = () => {
       <WorkSection />
       <MyWorksSection scrollToMyWorksList={scrollToMyWorks} />
       <MyWorksListSection ref={myWorksListSectionRef} />
+      <ContactSection />
     </div>
   );
 };
