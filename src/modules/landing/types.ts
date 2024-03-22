@@ -19,8 +19,8 @@ export interface IWork {
   link?: string; // Link of organization website
 }
 
-type IProjectTags = (typeof PROJECT_TAGS)[keyof typeof PROJECT_TAGS];
-type IProjectType = (typeof PROJECT_TYPE)[keyof typeof PROJECT_TYPE];
+export type IProjectTags = (typeof PROJECT_TAGS)[keyof typeof PROJECT_TAGS];
+export type IProjectType = (typeof PROJECT_TYPE)[keyof typeof PROJECT_TYPE];
 
 export interface IProject {
   title: string;

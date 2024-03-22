@@ -1,7 +1,7 @@
 import { IEducation, IProject, IWork } from "./types";
 
 export const PROJECT_TAGS = {
-  reactJs: "ReactJs",
+  reactJs: "React.js",
   nodeJs: "Node.js",
   go: "Go",
   javaScript: "JavaScript",
@@ -86,7 +86,7 @@ export const projects: IProject[] = [
   {
     title: "CocktailsDB",
     type: "Front End",
-    tags: ["React.js"],
+    tags: ["React.js", "Fun"],
     description: "",
     productionLink: "https://react-cocktails-db.netlify.app/",
     sourceCodeLink: "https://github.com/anandureghu/cocktailsdb",
