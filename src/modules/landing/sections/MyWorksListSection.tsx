@@ -18,8 +18,6 @@ const MyWorksListSection = forwardRef<HTMLDivElement>(
       setProjectsList(filteredProjects);
     };
 
-    console.log(props);
-
     return (
       <div className="myWorksList" ref={ref}>
         <div className="myWorksList__content">
@@ -92,9 +90,12 @@ const MyWorksListSection = forwardRef<HTMLDivElement>(
                   {project.type}
                 </h4>
                 <div className="myWorksList__projects--project-tags">
-                  {project.tags.map((tag) => {
+                  {project.tags.map((tag, i) => {
                     return (
-                      <p className="myWorksList__projects--project-tags-tag">
+                      <p
+                        className="myWorksList__projects--project-tags-tag"
+                        key={`myWorksList__projects--project-tags-tag-${i + 1}`}
+                      >
                         {tag}
                       </p>
                     );

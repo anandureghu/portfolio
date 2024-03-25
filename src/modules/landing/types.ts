@@ -31,3 +31,10 @@ export interface IProject {
   sourceCodeLink: string;
   imageUrl: string;
 }
+
+export interface IContact {
+  name: string;
+  email: string;
+  to_email: string;
+  description: string;
+}
