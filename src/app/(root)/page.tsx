@@ -1,13 +1,13 @@
 "use client";
 import React from "react";
 import HeaderSection from "./(sections)/HeaderSection";
-import AboutSection from "./(sections)/AboutSection";
+import ProjectsSection from "./(sections)/ProjectsSection";
 
 const page = () => {
   return (
     <main className="bg-black ">
       <HeaderSection />
-      <AboutSection />
+      <ProjectsSection />
     </main>
   );
 };
