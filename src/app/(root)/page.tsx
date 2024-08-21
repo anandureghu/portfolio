@@ -3,6 +3,7 @@ import React from "react";
 import HeaderSection from "./(sections)/HeaderSection";
 import ProjectsSection from "./(sections)/ProjectsSection";
 import ContactSection from "./(sections)/ContactSection";
+import FooterSection from "./(sections)/FooterSection";
 
 const page = () => {
   return (
@@ -10,6 +11,7 @@ const page = () => {
       <HeaderSection />
       <ProjectsSection />
       <ContactSection />
+      <FooterSection />
     </main>
   );
 };
