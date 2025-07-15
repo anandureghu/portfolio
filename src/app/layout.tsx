@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Fahkwang, Fredoka, Fustat, Miss_Fajardose } from "next/font/google";
+import { Fredoka, Fustat, Handlee, Miss_Fajardose } from "next/font/google";
 import "./globals.css";
 
 const missFajardose = Miss_Fajardose({
@@ -9,9 +9,9 @@ const missFajardose = Miss_Fajardose({
 });
 
 // highlight font
-const fahkwang = Fahkwang({
+const handlee = Handlee({
   variable: "--font-highlight",
-  weight: ["200", "300", "400", "500", "600", "700"],
+  weight: ["400"],
   subsets: ["latin"],
 });
 
@@ -41,9 +41,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="bg-gray-950 text-slate-200">
       <body
-        className={`${fredoka.variable} ${fahkwang.variable} ${fustat.variable} ${missFajardose.variable} antialiased font-body`}
+        className={`${fredoka.variable} ${handlee.variable} ${fustat.variable} ${missFajardose.variable} antialiased font-body app-container mx-auto `}
       >
         {children}
       </body>
