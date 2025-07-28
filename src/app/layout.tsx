@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Fredoka, Fustat, Handlee, Miss_Fajardose } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/navbar";
+import BodyGradients from "@/components/body-gradients";
 
 const missFajardose = Miss_Fajardose({
   variable: "--font-sign",
@@ -43,8 +45,10 @@ export default function RootLayout({
   return (
     <html lang="en" className="bg-gray-950 text-slate-200">
       <body
-        className={`${fredoka.variable} ${handlee.variable} ${fustat.variable} ${missFajardose.variable} antialiased font-body app-container mx-auto `}
+        className={`relative ${fredoka.variable} ${handlee.variable} ${fustat.variable} ${missFajardose.variable} antialiased font-body app-container mx-auto `}
       >
+        <BodyGradients />
+        <Navbar />
         {children}
       </body>
     </html>

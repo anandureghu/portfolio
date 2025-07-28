@@ -19,7 +19,7 @@ const HeaderSection = () => {
     },
     {
       name: "Instagram",
-      url: "https://www.instagram.com/anandureghu/",
+      url: "https://www.instagram.com/theanandureghu/",
       icon: Instagram,
     },
   ];
