@@ -24,7 +24,7 @@ const HeaderSection = () => {
     },
   ];
   return (
-    <main className="min-h-dvh flex items-center justify-center">
+    <main className="flex items-center justify-center pt-[200px] pb-[100px]">
       <div className="">
         <div className="text-5xl max-md:text-3xl font-highlight">
           <div className="max-md:flex max-md:flex-row max-md:items-center max-md:gap-1 max-sm:flex-wrap">
