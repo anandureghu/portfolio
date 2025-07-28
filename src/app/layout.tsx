@@ -46,6 +46,8 @@ export default function RootLayout({
       <body
         className={`relative ${fredoka.variable} ${handlee.variable} ${fustat.variable} ${missFajardose.variable} antialiased font-body app-container mx-auto overflow-y-hidden`}
       >
+        <BodyGradients />
+        <Navbar />
         {children}
         <BodyGradients className="bottom-[0px] left-1/2 transform -translate-x-1/2 translate-y-[90%]" />
       </body>
