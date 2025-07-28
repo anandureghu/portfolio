@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Fredoka, Fustat, Handlee, Miss_Fajardose } from "next/font/google";
 import "./globals.css";
 import BodyGradients from "@/components/body-gradients";
+import Navbar from "@/components/navbar";
 
 const missFajardose = Miss_Fajardose({
   variable: "--font-sign",
