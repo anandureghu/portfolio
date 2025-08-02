@@ -4,8 +4,6 @@ import React from "react";
 import Instagram from "@/icons/instagram.svg?url";
 import LinkedIn from "@/icons/linkedin.svg?url";
 import Github from "@/icons/github.svg?url";
-import Navbar from "@/components/navbar";
-import BodyGradients from "@/components/body-gradients";
 
 const HeaderSection = () => {
   const socialLinks = [
@@ -27,9 +25,6 @@ const HeaderSection = () => {
   ];
   return (
     <>
-      <Navbar />
-      <BodyGradients className="top-[0px] left-1/2 transform -translate-x-1/2 -translate-y-1/2 " />
-
       <main className="flex items-center justify-center pt-[120px] pb-[100px]">
         <div className="">
           <div className="text-5xl max-md:text-3xl font-highlight">
