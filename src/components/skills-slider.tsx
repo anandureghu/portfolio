@@ -58,7 +58,7 @@ const SkillsSlider = ({ skills }: SkillsSliderProps) => {
           direction = e.direction * -1;
         },
       },
-      x: "-300px",
+      x: "0px",
     });
   }, []);
 
