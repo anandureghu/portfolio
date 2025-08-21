@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import { Fredoka, Fustat, Handlee, Miss_Fajardose } from "next/font/google";
 import "./globals.css";
+import Footer from "@/sections/footer";
+import Navbar from "@/components/navbar";
+import BodyGradients from "@/components/body-gradients";
+import { Toaster } from "sonner";
 
 const missFajardose = Miss_Fajardose({
   variable: "--font-sign",
@@ -43,9 +47,16 @@ export default function RootLayout({
   return (
     <html lang="en" className="bg-gray-950 text-slate-200">
       <body
-        className={`${fredoka.variable} ${handlee.variable} ${fustat.variable} ${missFajardose.variable} antialiased font-body app-container mx-auto `}
+        className={`relative ${fredoka.variable} ${handlee.variable} ${fustat.variable} ${missFajardose.variable} antialiased font-body app-container mx-auto`}
       >
+        <Toaster richColors position="bottom-center" />
+        <Navbar />
+        <BodyGradients className="top-[0px] left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-50" />
+
         {children}
+
+        <BodyGradients className="absolute bottom-[0px] left-1/2 transform -translate-x-1/2 translate-y-[70%] opacity-40 rounded-b-none rounded-t-full" />
+        <Footer />
       </body>
     </html>
   );

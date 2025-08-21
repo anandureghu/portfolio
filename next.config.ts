@@ -1,4 +1,14 @@
 import type { NextConfig } from "next";
+import BundleAnalyzer from "@next/bundle-analyzer";
+
+const withBundleAnalyzer = BundleAnalyzer({
+  enabled: process.env.ANALYZE === "true",
+});
+
+module.exports = withBundleAnalyzer({
+  // Your existing Next.js config here
+  reactStrictMode: true,
+});
 
 const nextConfig: NextConfig = {
   webpack(config) {
