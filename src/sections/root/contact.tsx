@@ -29,7 +29,9 @@ const Contact = () => {
 
   return (
     <div className="my-[100px] p-[40px] px-[50px] rounded-4xl bg-gradient-to-r from-indigo-500/10 to-violet-500/20">
-      <h1 className="text-5xl font-semibold lowercase text-center">Say Hi,</h1>
+      <h1 className="text-5xl font-semibold lowercase text-center">
+        Say Hi 👋,
+      </h1>
       <p className="text-lg mt-2 mb-4 w-full text-center mx-auto opacity-70">
         {emailSent ? (
           <>
