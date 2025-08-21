@@ -25,7 +25,7 @@ const SkillsList = ({ skills, className }: SkillsListProps) => {
               src={skill.icon}
               width={50}
               height={50}
-              className={`object-contain min-w-[50px] min-h-[50px] grayscale hover:grayscale-0 cursor-pointer ${className}`}
+              className={`object-contain min-w-[50px] min-h-[50px] cursor-pointer ${className}`}
               alt={skill.name}
             />
           </div>
@@ -72,7 +72,7 @@ const SkillsSlider = ({ skills }: SkillsSliderProps) => {
     gsap.set(fistRef.current, { xPercent: xPercent });
     gsap.set(secondRef.current, { xPercent: xPercent });
 
-    xPercent += 0.1 * direction;
+    xPercent += 0.05 * direction;
     requestAnimationFrame(animation);
   };
 
