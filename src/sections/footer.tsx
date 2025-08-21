@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <footer className="py-[100px]">
+    <footer className="py-[20px]">
       <p className="text-center text-sm text-gray-500 flex items-center gap-1 w-fit mx-auto">
         © {new Date().getFullYear()} anandureghu{" "}
         <Image
