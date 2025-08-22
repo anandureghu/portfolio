@@ -11,9 +11,9 @@ export const ProjectAttributes = ({
   values: string[];
 }) => {
   return (
-    <div className="flex items-center gap-2 font-medium mt-2 ">
+    <div className="flex items-start gap-2 font-medium mt-2 ">
       <h4>{title}: </h4>
-      <div className="flex items-center gap-1 mt-1">
+      <div className="flex items-center gap-1 mt-1 flex-wrap">
         {values.map((value, valueIndex) => (
           <span
             key={valueIndex}

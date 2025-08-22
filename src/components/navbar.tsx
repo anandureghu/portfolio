@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import NavLinks from "./nav-links";
 
 const Navbar = () => {
   const navItems = [
@@ -11,7 +12,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="relative top-[20px] left-1/2 transform -translate-x-1/2 w-full app-container px-[30px] py-[10px] rounded-full glass z-50">
+    <div className="relative top-[20px] left-1/2 transform -translate-x-1/2 w-full app-container px-[30px] py-[10px] rounded-full glass z-50 overflow-visible">
       <div className="app-container flex items-center justify-between">
         <Link href={"/"} className="relative w-fit">
           <h1 className="font-sign text-4xl transform -translate-y-[5px] font-semibold -rotate-2 w-fit relative z-1">
@@ -25,7 +26,7 @@ const Navbar = () => {
             alt="underline"
           />
         </Link>
-        <div className="flex items-center justify-center">
+        <div className="flex items-center justify-center max-sm:hidden">
           {navItems.map((item, index) => (
             <Link
               key={index}
@@ -37,6 +38,8 @@ const Navbar = () => {
             </Link>
           ))}
         </div>
+
+        <NavLinks />
       </div>
     </div>
   );
