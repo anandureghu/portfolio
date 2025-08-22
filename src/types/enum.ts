@@ -18,26 +18,26 @@ export enum TechnologiesEnum {
   ThreeJS = "Three.js",
 }
 
-export const ProjectsTypeEnum = {
-  Web: "Web",
-  Landingpage: "Landing Page",
-  LogoDesign: "Logo Design",
-  MobileApp: "Mobile App",
-  UIUXDesign: "UI/UX Design",
-  FullStackDevelopment: "Full Stack Development",
-  OpenSource: "Open Source",
-};
+export enum ProjectsTypeEnum {
+  Web = "Web",
+  Landingpage = "Landing Page",
+  LogoDesign = "Logo Design",
+  MobileApp = "Mobile App",
+  UIUXDesign = "UI/UX Design",
+  FullStackDevelopment = "Full Stack Development",
+  OpenSource = "Open Source",
+}
 
-export const DomainEnum = {
-  Branding: "Branding",
-  Portfolio: "Portfolio",
-  InventoryManagement: "Inventory Management",
-  Payroll: "Payroll",
-};
+export enum DomainEnum {
+  Branding = "Branding",
+  Portfolio = "Portfolio",
+  InventoryManagement = "Inventory Management",
+  Payroll = "Payroll",
+}
 
-export const ProjectStatusEnum = {
-  WIP: "WIP",
-  Completed: "Completed",
-  Planned: "Planned",
-  V2: "V2",
-};
+export enum ProjectStatusEnum {
+  WIP = "WIP",
+  Completed = "Completed",
+  Planned = "Planned",
+  V2 = "V2",
+}

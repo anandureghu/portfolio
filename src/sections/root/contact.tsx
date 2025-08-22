@@ -33,7 +33,7 @@ const Contact = () => {
       id="contact"
     >
       <h1 className="text-5xl font-semibold lowercase text-center">
-        Say Hi 👋,
+        Say Hi <span className="">👋</span>,
       </h1>
       <p className="text-lg mt-2 mb-4 w-full text-center mx-auto opacity-70">
         {emailSent ? (

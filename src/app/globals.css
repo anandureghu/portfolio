@@ -63,6 +63,10 @@
     @apply inline-block bg-gradient-to-r from-indigo-200 to-pink-200 bg-clip-text text-transparent;
   }
 
+  .text-gd-cyan {
+    @apply inline-block bg-gradient-to-r from-cyan-500 to-violet-600 bg-clip-text text-transparent;
+  }
+
   .app-container {
     @apply max-w-[650px] max-md:max-w-[560px] max-sm:max-w-[350px];
   }
