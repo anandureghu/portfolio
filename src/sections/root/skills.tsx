@@ -5,7 +5,7 @@ import React from "react";
 const Skills = async () => {
   const skills = await getSkills();
   return (
-    <div className="">
+    <div className="" id="skills">
       <SkillsSlider skills={skills} />
     </div>
   );

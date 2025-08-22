@@ -28,7 +28,10 @@ const Contact = () => {
   };
 
   return (
-    <div className="my-[100px] p-[40px] px-[50px] rounded-4xl bg-gradient-to-r from-indigo-500/10 to-violet-500/20">
+    <div
+      className="my-[100px] p-[40px] px-[50px] rounded-4xl bg-gradient-to-r from-indigo-500/10 to-violet-500/20"
+      id="contact"
+    >
       <h1 className="text-5xl font-semibold lowercase text-center">
         Say Hi 👋,
       </h1>
@@ -69,7 +72,7 @@ const Contact = () => {
             onChange={(e) => setMessage(e.target.value)}
           ></textarea>
           <button
-            className="bg-gradient-to-r from-indigo-500 to-violet-500 text-white rounded-3xl px-[20px] py-[15px] mt-3 mx-auto w-fit block cursor-pointer hover:opacity-90 transition-opacity duration-150"
+            className="bg-gradient-to-r from-indigo-500 to-violet-500 text-white rounded-3xl px-[20px] py-[15px] mt-3 mx-auto w-fit block cursor-pointer hover:opacity-90 transition-opacity duration-150 max-md:w-full"
             onClick={handleSendMessage}
           >
             Send Message
