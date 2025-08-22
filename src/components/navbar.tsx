@@ -29,7 +29,7 @@ const Navbar = () => {
             <Link
               key={index}
               href={item.href}
-              className="mx-1 text-sm text-gray-400 hover:text-gray-50 cursor-pointer transition-colors duration-200 ease-in py-5 px-2 max-sm:px-0"
+              className="mx-1 text-sm text-gray-400 hover:text-gray-50 cursor-pointer transition-colors duration-200 ease-in py-2 px-2 max-sm:px-0 max-sm:py-0"
               scroll={true}
             >
               {item.name}
