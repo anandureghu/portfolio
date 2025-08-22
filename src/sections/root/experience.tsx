@@ -32,7 +32,7 @@ const experienceData = [
 
 const Experience = () => {
   return (
-    <div className="mt-[100px]">
+    <div className="mt-[100px]" id="experience">
       <h1 className="uppercase text-gray-700 font-semibold">Experience</h1>
       <div className="mt-4">
         {experienceData.map((exp, index) => (
@@ -51,17 +51,21 @@ const Experience = () => {
             />
             <div>
               <p className="text-sm text-gray-500">{exp.duration}</p>
-              <div className="flex items-center gap-2 font-medium">
-                <h2 className="text-xl">{exp.title}</h2>
-                <span className="">@</span>
-                <h3 className="text-lg ">{exp.company}</h3>
-                <Image
-                  src="/svg/redirect.svg"
-                  alt="arrow right"
-                  width={20}
-                  height={20}
-                  className="opacity-50"
-                />
+              <div className="flex items-center gap-2 font-medium max-md:flex-col max-md:items-start max-md:gap-1 max-md:mt-2">
+                <h2 className="text-xl max-md:text-2xl">{exp.title}</h2>
+                <span className="max-md:hidden">@</span>
+                <div className="flex items-center gap-1">
+                  <h3 className="text-lg max-md:text-md max-md:font-regular max-md:opacity-70">
+                    {exp.company}
+                  </h3>
+                  <Image
+                    src="/svg/redirect.svg"
+                    alt="arrow right"
+                    width={20}
+                    height={20}
+                    className="opacity-50"
+                  />
+                </div>
               </div>
             </div>
             {/* <p className="mt-2 text-gray-700">{exp.description}</p> */}
