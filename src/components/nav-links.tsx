@@ -53,7 +53,7 @@ const NavLinks = () => {
       <div
         className={`absolute top-7 right-0 z-50  rounded-sm p-0 min-w-20 h-0 ${
           isOpen
-            ? "h-auto p-4 py-3 bg-glass bg-white/5 backdrop-blur-md"
+            ? "h-auto p-4 py-3 bg-glass bg-black/75 backdrop-blur-lg"
             : "bg-transparent"
         } transition-all duration-300 ease-in-out overflow-hidden`}
         id="nav-links"

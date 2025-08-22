@@ -18,25 +18,23 @@ interface SkillsListProps {
 const SkillsList = ({ skills, className }: SkillsListProps) => {
   return (
     <div className="flex items-center gap-5 no-scrollbar w-fit py-2 whitespace-nowrap">
-      {skills?.map((skill) => {
-        return (
-          <div key={skill.name} className="">
-            <Image
-              src={skill.icon}
-              width={50}
-              height={50}
-              className={`object-contain min-w-[50px] min-h-[50px] cursor-pointer ${className}`}
-              alt={skill.name}
-            />
-          </div>
-        );
-      })}
+      {skills?.map((skill) => (
+        <div key={skill.name}>
+          <Image
+            src={skill.icon}
+            width={50}
+            height={50}
+            className={`object-contain min-w-[50px] min-h-[50px] cursor-pointer ${className}`}
+            alt={skill.name}
+          />
+        </div>
+      ))}
     </div>
   );
 };
 
 const SkillsSlider = ({ skills }: SkillsSliderProps) => {
-  const fistRef = useRef<HTMLDivElement>(null);
+  const firstRef = useRef<HTMLDivElement>(null);
   const secondRef = useRef<HTMLDivElement>(null);
   const slider = useRef<HTMLDivElement>(null);
 
@@ -44,7 +42,22 @@ const SkillsSlider = ({ skills }: SkillsSliderProps) => {
   let direction = -1;
 
   useEffect(() => {
+    if (!firstRef.current || !secondRef.current || !slider.current) return;
+
     gsap.registerPlugin(ScrollTrigger);
+
+    const animation = () => {
+      if (!firstRef.current || !secondRef.current) return;
+
+      if (xPercent <= -100) xPercent = 0;
+      if (xPercent > 0) xPercent = -100;
+
+      gsap.set(firstRef.current, { xPercent });
+      gsap.set(secondRef.current, { xPercent });
+
+      xPercent += 0.05 * direction;
+      requestAnimationFrame(animation);
+    };
 
     requestAnimationFrame(animation);
 
@@ -60,32 +73,22 @@ const SkillsSlider = ({ skills }: SkillsSliderProps) => {
       },
       x: "0px",
     });
+
+    return () => {
+      ScrollTrigger.getAll().forEach((t) => t.kill());
+    };
   }, []);
-
-  const animation = () => {
-    if (xPercent <= -100) {
-      xPercent = 0;
-    }
-    if (xPercent > 0) {
-      xPercent = -100;
-    }
-    gsap.set(fistRef.current, { xPercent: xPercent });
-    gsap.set(secondRef.current, { xPercent: xPercent });
-
-    xPercent += 0.05 * direction;
-    requestAnimationFrame(animation);
-  };
 
   return (
     <div
       ref={slider}
       className="relative overflow-y-auto flex gap-5 whitespace-nowrap no-scrollbar"
     >
-      <div ref={fistRef} className="pr-5">
-        <SkillsList skills={skills} className="" />
+      <div ref={firstRef} className="pr-5">
+        <SkillsList skills={skills} />
       </div>
-      <div ref={secondRef} className="absolute transform translate-x-full">
-        <SkillsList skills={skills} className="" />
+      <div ref={secondRef} className="absolute translate-x-full">
+        <SkillsList skills={skills} />
       </div>
     </div>
   );
